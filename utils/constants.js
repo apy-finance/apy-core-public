@@ -169,50 +169,6 @@ const TOKEN_AGG_MAP = {
   ],
 };
 
-function _getDeploysJson(contractName) {
-  return `${__dirname}/../deployed_addresses/${contractName}.json`;
-}
-
-const CONTRACT_NAMES = [
-  "PoolTokenProxyAdmin",
-  "DAI_PoolToken",
-  "DAI_PoolTokenProxy",
-  "USDC_PoolToken",
-  "USDC_PoolTokenProxy",
-  "USDT_PoolToken",
-  "USDT_PoolTokenProxy",
-  "PoolTokenV2",
-  "Demo_DAI_PoolTokenProxy",
-  "Demo_USDC_PoolTokenProxy",
-  "Demo_USDT_PoolTokenProxy",
-  "AddressRegistry",
-  "AddressRegistryV2",
-  "AddressRegistryProxy",
-  "AddressRegistryProxyAdmin",
-  "GovernanceToken",
-  "GovernanceTokenProxy",
-  "GovernanceTokenProxyAdmin",
-  "MetaPoolToken",
-  "MetaPoolTokenProxy",
-  "MetaPoolTokenProxyAdmin",
-  "OracleAdapter",
-  "PoolManager",
-  "PoolManagerProxy",
-  "PoolManagerProxyAdmin",
-  "ProxyConstructorArg",
-  "RewardDistributor",
-  "TvlManager",
-  "AdminSafe",
-  "EmergencySafe",
-  "LpSafe",
-  "AlphaDeployment",
-];
-
-const DEPLOYS_JSON = {};
-for (const contractName of CONTRACT_NAMES) {
-  DEPLOYS_JSON[contractName] = _getDeploysJson(contractName);
-}
-
 const ADDRESS_REGISTRY = "0x7EC81B7035e91f8435BdEb2787DCBd51116Ad303";
 const EMERGENCY_SAFE = "0xEf17933d32e07a5b789405Bd197F02D6BB393147";
 const ADMIN_SAFE = "0x1f7f8DA3eac80DBc0b4A49BC447A88585D8766C8";
@@ -225,8 +181,6 @@ module.exports = {
   CHAIN_IDS,
   AGG_MAP,
   TOKEN_AGG_MAP,
-  DEPLOYS_JSON,
-  CONTRACT_NAMES,
   ADDRESS_REGISTRY,
   EMERGENCY_SAFE,
   ADMIN_SAFE,

@@ -2,12 +2,7 @@ const hre = require("hardhat");
 const { ethers, web3 } = hre;
 const { AddressZero: ZERO_ADDRESS, MaxUint256: MAX_UINT256 } = ethers.constants;
 const { getAddress, impersonateAccount, setBalance } = require("./account.js");
-const {
-  getDeployedAddress,
-  getStablecoinAddress,
-  getAggregatorAddress,
-  updateDeployJsons,
-} = require("./address");
+const { getStablecoinAddress, getAggregatorAddress } = require("./address");
 const { deployAggregator } = require("./aggregator");
 const { getAssetAllocationValue } = require("./asset_allocation");
 const { expectEventInTransaction } = require("./event");
@@ -69,8 +64,6 @@ module.exports = {
   getAddress,
   impersonateAccount,
   setBalance,
-  updateDeployJsons,
-  getDeployedAddress,
   getStablecoinAddress,
   getAggregatorAddress,
   tokenAmountToBigNumber,

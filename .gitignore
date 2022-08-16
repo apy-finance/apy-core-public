@@ -1,7 +1,7 @@
 # NPM packages
 node_modules/
 
-# Buidler files
+# Hardhat files
 cache/
 artifacts/*
 
@@ -14,9 +14,6 @@ coverage/
 
 # env files
 .env
-/alpha.env
-/alpha.env.kovan
-/alpha.env.mainnet
 
 # npm
 .npmrc
@@ -26,11 +23,6 @@ coverage/
 yarn-debug.log*
 yarn-error.log*
 
-# subgraph
-subgraph.yaml
-**/subgraph/generated
-subgraph/build
-
 # lint
 .eslintcache
 
@@ -38,5 +30,3 @@ subgraph/build
 *.swp
 *.swo
 
-# cloned chainlink repo
-/chainlink-tvl-adapter

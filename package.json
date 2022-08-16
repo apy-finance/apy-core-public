@@ -1,9 +1,9 @@
 {
-  "name": "@apy-finance/apy-core",
-  "version": "9.1.0",
+  "name": "@cortexdao/protocol-contracts",
+  "version": "1.0.0",
   "description": "",
   "keywords": ["ethereum", "solidity", "defi"],
-  "files": ["contracts", "artifacts", "utils", "deployed_addresses"],
+  "files": ["contracts", "artifacts", "utils"],
   "scripts": {
     "check": "yarn lint",
     "clean": "hardhat clean",
@@ -29,17 +29,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/apy-finance/apy-core.git"
+    "url": "git+https://github.com/cortexdao/protocol-contracts.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "author": "APY.Finance",
+  "author": "Cortex DAO",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/apy-finance/apy-core/issues"
+    "url": "https://github.com/cortexdao/protocol-contracts/issues"
   },
-  "homepage": "https://github.com/apy-finance/apy-core/README.md",
+  "homepage": "https://github.com/cortexdao/protocol-contracts/README.md",
   "devDependencies": {
     "@gnosis.pm/mock-contract": "^4.0.0",
     "@nomiclabs/hardhat-ethers": "^2.0.2",
